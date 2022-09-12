@@ -11,7 +11,12 @@ jobs:
       - node/install-packages:
           override-ci-command: npm install
       - run: sudo npm install -g npm@latest
-      - run: npm run lint
+      - run:
+      name: run lint
+      command: |
+        set -e
+        npm run lint
+
 workflows:
   lint:
     jobs:
