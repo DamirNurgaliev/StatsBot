@@ -4,12 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node app.ts"
+    "start": "node app.ts",
+    "lint": "npx eslint *.ts & npx tsc"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/node-telegram-bot-api": "^0.57.1",
     "axios": "^0.27.2",
     "dotenv": "^16.0.2",
     "node-telegram-bot-api": "^0.59.0",
@@ -18,13 +20,9 @@
   "devDependencies": {
     "@tsconfig/node16": "^1.0.3",
     "@types/node": "^18.7.16",
-    "@typescript-eslint/eslint-plugin": "^5.0.0",
-    "eslint": "^8.0.1",
-    "eslint-config-standard": "^17.0.0",
-    "eslint-config-standard-with-typescript": "^22.0.0",
-    "eslint-plugin-import": "^2.25.2",
-    "eslint-plugin-n": "^15.0.0",
-    "eslint-plugin-promise": "^6.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.36.2",
+    "eslint": "8.23.1",
+    "eslint-config-prettier": "^8.5.0",
     "typescript": "*"
   }
 }

@@ -3,11 +3,10 @@
     "browser": true,
     "es2021": true
   },
-  "extends": "standard-with-typescript",
-  "overrides": [],
+  "extends": ["eslint:recommended", "prettier"],
   "parserOptions": {
-    "ecmaVersion": "latest",
+    "project": "./tsconfig.json",
     "sourceType": "module"
   },
-  "rules": {}
+  "plugins": ["@typescript-eslint"]
 }
