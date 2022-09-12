@@ -1,0 +1,17 @@
+version: 2.1
+
+orbs:
+  node: circleci/node@5.0.2
+# Define the jobs we want to run for this project
+jobs:
+  lint:
+    executor: node/default
+    steps:
+      - node/install-packages:
+          override-ci-command: npm install
+      - run: sudo npm install -g npm@latest
+      - run: npm run lint
+workflows:
+  lint:
+    jobs:
+      - lint
