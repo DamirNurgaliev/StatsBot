@@ -2,7 +2,7 @@
   "name": "DotaStatsBot",
   "main": "app.ts",
   "scripts": {
-    "start": "node app.ts",
+    "start": "tsx app.ts",
     "lint": "(eslint *.ts & tsc) && exit 0"
   },
   "dependencies": {
@@ -15,6 +15,7 @@
     "eslint": "8.23.1",
     "eslint-config-prettier": "^8.5.0",
     "typescript": "*",
-    "@typescript-eslint/parser": "^5.37.0"
+    "@typescript-eslint/parser": "^5.37.0",
+    "tsx": "^3.9.0"
   }
 }
