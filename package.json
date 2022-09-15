@@ -1,28 +1,22 @@
 {
   "name": "DotaStatsBot",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "main": "app.ts",
+  "type": "module",
   "scripts": {
-    "start": "node app.ts",
-    "lint": "(npx eslint *.ts & npx tsc) && exit 0"
+    "start": "tsx app.ts",
+    "lint": "(eslint *.ts & tsc) && exit 0"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "@types/node-telegram-bot-api": "^0.57.1",
-    "axios": "^0.27.2",
-    "dotenv": "^16.0.2",
-    "node-telegram-bot-api": "^0.59.0",
     "prettier": "^2.7.1"
   },
   "devDependencies": {
-    "@tsconfig/node16": "^1.0.3",
+    "@tsconfig/node18-strictest-esm": "^1.0.1",
     "@types/node": "^18.7.16",
     "@typescript-eslint/eslint-plugin": "^5.36.2",
     "eslint": "8.23.1",
     "eslint-config-prettier": "^8.5.0",
-    "typescript": "*"
+    "typescript": "*",
+    "@typescript-eslint/parser": "^5.37.0",
+    "tsx": "^3.9.0"
   }
 }

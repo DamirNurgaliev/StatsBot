@@ -8,6 +8,8 @@ jobs:
     executor: node/default
     steps:
       - checkout
+      - node/install:
+          node-version: '18.9'
       - node/install-packages:
           override-ci-command: npm install
       - run: sudo npm install -g npm@latest
