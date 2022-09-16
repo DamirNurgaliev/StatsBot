@@ -3,7 +3,8 @@
   "main": "app.ts",
   "type": "module",
   "scripts": {
-    "start": "tsx -r dotenv/config app.ts",
+    "start": "node -r dotenv/config app.js",
+    "start:local": "tsx -r dotenv/config app.ts",
     "lint": "(eslint *.ts & tsc) && exit 0"
   },
   "dependencies": {
